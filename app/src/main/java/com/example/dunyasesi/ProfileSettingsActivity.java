@@ -2,6 +2,7 @@ package com.example.dunyasesi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,7 @@ public class ProfileSettingsActivity extends AppCompatActivity {
 
     private void navigateBack() {
         // TODO (homework) navigate back from the settings page
-
+        Intent m = new Intent(this.getApplication(),Explore.class);
+        startActivity(m);
     }
 }

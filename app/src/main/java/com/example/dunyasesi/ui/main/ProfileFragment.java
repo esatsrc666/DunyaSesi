@@ -1,5 +1,6 @@
 package com.example.dunyasesi.ui.main;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
@@ -19,6 +20,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.dunyasesi.ProfileSettingsActivity;
 import com.example.dunyasesi.R;
 
 import java.io.BufferedInputStream;
@@ -73,7 +75,8 @@ public class ProfileFragment extends Fragment {
 
     private void navigateToSettingsActivity() {
         // TODO(homework) using intent to navigate to settings activity
-
+        Intent i = new Intent(this.getActivity(), ProfileSettingsActivity.class);
+        startActivity(i);
     }
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
