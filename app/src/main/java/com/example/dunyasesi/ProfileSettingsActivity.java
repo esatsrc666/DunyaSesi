@@ -29,7 +29,11 @@ public class ProfileSettingsActivity extends AppCompatActivity {
 
     private void navigateBack() {
         // TODO (homework) navigate back from the settings page
-        Intent m = new Intent(this.getApplication(),Explore.class);
-        startActivity(m);
+        Intent i = new Intent(this.getApplicationContext(), Explore.class);
+        startActivity(i);
     }
+
+
+
+
 }
